@@ -1,6 +1,6 @@
 # AI 해커톤 스킬 모음
 
-제한된 시간에 실무 과제를 구현할 때 참고할 수 있는 Codex 스킬 6개입니다. 필요한 스킬만 선택해 사용하세요.
+제한된 시간에 실무 과제를 구현할 때 참고할 수 있는 Codex 스킬 8개입니다. 필요한 스킬만 선택해 사용하세요.
 
 | 스킬 | 사용할 때 |
 | --- | --- |
@@ -10,6 +10,8 @@
 | [`emil-design-eng`](skills/emil-design-eng/SKILL.md) | 웹 UI의 상호작용, 접근성과 시각적 완성도를 다듬을 때 |
 | [`wanted-app-design`](skills/wanted-app-design/SKILL.md) | Wanted 앱 같은 차분한 모바일 UI가 필요한 경우 |
 | [`apple-design`](skills/apple-design/SKILL.md) | 터치·드래그·시트 등 제스처 중심 UI가 실제로 필요한 경우 |
+| [`mlnkorean`](skills/mlnkorean/SKILL.md) | 과제 풀이 중 한국어 보고서·화면 안내 문장을 다듬을 때 |
+| [`humanize-korean`](skills/humanize-korean/SKILL.md) | 과제 풀이 중 짧은 한국어 설명문에서 어색한 번역투를 점검할 때 |
 
 ## 사용
 
@@ -30,6 +32,8 @@ ai-hackathon-skills/skills/ponytail/SKILL.md를 읽고,
 React가 필요할 때는 `skills/react-best-practices/SKILL.md`, 라이브러리 선택이 필요할 때는 `skills/pick-ui-library/SKILL.md`를 지정할 수 있습니다. `react-best-practices`의 `rules/`와 `AGENTS.md`는 스킬이 참조하는 자료이므로 함께 유지합니다.
 
 화면이 필요하다면 `emil-design-eng`을 고려하세요. 모바일 화면의 스타일이 맞는 경우에만 `wanted-app-design`을, 제스처가 과제의 핵심인 경우에만 `apple-design`을 사용하세요. 한꺼번에 적용하기보다 과제에 필요한 스킬 하나를 선택하고, 필수 기능과 검증을 먼저 완성하세요. `wanted-app-design`의 `references/`는 스킬과 함께 유지합니다.
+
+한국어 문서를 다듬을 때는 `mlnkorean` 또는 `humanize-korean` 중 하나만 선택하세요. 실제 구현·수치·불확실성과 검증 범위를 임의로 바꾸지 않도록 요청하고 결과를 직접 대조하세요. `humanize-korean`은 별도 `_workspace/` 결과 파일을 만들 수 있으므로 제출 미리보기에서 제출 대상과 필수 파일을 확인하세요. `mlnkorean`은 개인 말투 샘플이 없으면 기본 문체를 사용합니다. 이 저장소에는 개인 업무 메시지 샘플을 포함하지 않습니다.
 
 ## 시험 환경에서 주의
 
