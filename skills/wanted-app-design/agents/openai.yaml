@@ -1,0 +1,4 @@
+interface:
+  display_name: "원티드"
+  short_description: "원티드 앱처럼 차분하고 정돈된 모바일 UI 설계"
+  default_prompt: "Use $wanted-app-design to 원티드 앱에서 관찰한 여백, 카드, 반투명 재질, 아이콘과 동작 규칙으로 이 모바일 앱을 설계해 주세요."
