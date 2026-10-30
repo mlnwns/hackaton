@@ -24,7 +24,9 @@ import '@montage-ui/core/global.css';
 </ThemeProvider>
 ```
 
-실제 starter는 `assets/react-starter/src/app.jsx`에 목록/필터, 상세/아코디언, 입력/검증, 진행/설정 네 흐름을 담는다. `src/style.css`는 앱 레이아웃만 조정하며 공식 컴포넌트 내부 스타일을 무조건 덮어쓰지 않는다. 가상 설비 데이터·업무 흐름은 스킬이 만든 응용이며 원티드 서비스 원본이 아니다. 저장은 메모리만 사용하므로 새로고침하면 초기화된다.
+`dist/dashboard.html`은 독립 대시보드 진입점이다. 대시보드는 [dashboard-patterns.md](dashboard-patterns.md)를 참고한다.
+
+실제 starter는 `assets/react-starter/src/app.jsx`에 목록/필터, 상세/아코디언, 입력/검증, 진행/설정 네 흐름을 담고 데이터·차트 탭에서 별도 대시보드를 연결한다. `src/style.css`는 앱 레이아웃만 조정하며 공식 컴포넌트 내부 스타일을 무조건 덮어쓰지 않는다. 가상 설비 데이터·업무 흐름은 스킬이 만든 응용이며 원티드 서비스 원본이 아니다. 저장은 메모리만 사용하므로 새로고침하면 초기화된다.
 
 ## 필요한 컴포넌트만 선택
 

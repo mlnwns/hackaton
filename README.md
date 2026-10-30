@@ -13,7 +13,7 @@
 | [`composition-patterns`](skills/composition-patterns/SKILL.md) | 복잡한 React 컴포넌트의 구조를 정리할 필요가 있을 때 |
 | [`pick-ui-library`](skills/pick-ui-library/SKILL.md) | 차트나 UI 컴포넌트처럼 라이브러리 선택이 필요한 경우 |
 | [`emil-design-eng`](skills/emil-design-eng/SKILL.md) | 웹 UI의 상호작용, 접근성과 시각적 완성도를 다듬을 때 |
-| [`wanted-web-design`](skills/wanted-web-design/SKILL.md) | 원티드 공식 Montage + PC 실측: 드롭다운·표·폼·상세·진행 화면을 주제에 맞게 조합할 때 |
+| [`wanted-web-design`](skills/wanted-web-design/SKILL.md) | 원티드 공식 Montage + PC 실측: 드롭다운·표·폼·상세·대시보드·차트를 주제에 맞게 조합할 때 |
 | [`wanted-app-design`](skills/wanted-app-design/SKILL.md) | Wanted 앱 같은 차분한 모바일 UI가 필요한 경우 |
 | [`apple-design`](skills/apple-design/SKILL.md) | 터치·드래그·시트 등 제스처 중심 UI가 실제로 필요한 경우 |
 | [`mlnkorean`](skills/mlnkorean/SKILL.md) | 과제 풀이 중 한국어 보고서·화면 안내 문장을 다듬을 때 |
@@ -63,3 +63,9 @@ React Native·Expo를 사용하는 과제라면 `react-native-skills`를 참고�
 `react-best-practices`, `react-native-skills`, `composition-patterns`는 Vercel Engineering의 [공개 스킬 모음](https://github.com/vercel-labs/agent-skills)을 기반으로 하며 각 스킬 메타데이터에 MIT 라이선스가 표시되어 있습니다. `systematic-debugging`과 `verification-before-completion`은 [obra/superpowers](https://github.com/obra/superpowers)에서 가져왔으며 각 폴더의 MIT 라이선스를 보존했습니다. `systematic-debugging`에서 외부 플러그인 스킬을 필수로 호출하던 두 지침을 이 저장소에서 독립적으로 사용할 수 있도록 수정했습니다. 스킬별 안내와 라이선스 표기는 각 폴더를 확인하세요.
 
 `wanted-web-design/assets`에는 독립적으로 작성한 재사용 CSS와 [Pretendard](https://github.com/orioncactus/pretendard) Variable 폰트가 포함됩니다. 폰트의 SIL Open Font License는 같은 폴더의 `OFL.txt`에 보존되어 있습니다. `assets/react-starter`에는 공식 [Montage](https://github.com/wanteddev/montage-web) 4.1.5를 사용하는 표·다중 필터·입력 검증·상세·진행 상태 예제가 있습니다. `npm ci && npm run build`로 실행용 HTML을 만들 수 있습니다. Montage의 MIT 라이선스도 포함합니다. 공식 라이브러리를 활용하지만 이 스킬 자체는 원티드의 공식 스킬이나 제휴 제품이 아닙니다.
+
+### 데이터 대시보드
+
+`wanted-web-design`은 [대시보드 배치](skills/wanted-web-design/references/dashboard-patterns.md), [차트 선택·테마](skills/wanted-web-design/references/chart-recipes.md), [지표·집계·데이터 계약](skills/wanted-web-design/references/data-contracts.md)을 포함합니다. 공식 Montage UI와 독립적으로 만든 ECharts 테마를 조합하며, 원티드 공식 차트나 실제 기업 데이터로 소개하지 않습니다.
+
+`skills/wanted-web-design/assets/react-starter`에서 `npm ci && npm test && npm run build`를 실행하면 `dist/dashboard.html`에 6종 차트·필터·검사 기록·CSV·상태 예제를 볼 수 있습니다. 공개 레포에는 원본 소스와 lockfile을 포함하며 `node_modules`·빌드 결과·Playwright는 포함하지 않습니다.

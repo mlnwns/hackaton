@@ -44,6 +44,7 @@ import {
 } from "@montage-ui/core";
 import "@montage-ui/core/global.css";
 import "./style.css";
+import Dashboard from "./dashboard/Dashboard.jsx";
 const initialRows = [
   ["냉각 장치 A-02", "1구역", "확인 필요", "온도 재확인", 82],
   ["순환 펌프 B-04", "2구역", "정상", "정기 점검 완료", 34],
@@ -185,8 +186,12 @@ function App() {
               <TabListItem value="detail">상세·안내</TabListItem>
               <TabListItem value="form">입력·요청</TabListItem>
               <TabListItem value="progress">진행·설정</TabListItem>
+              <TabListItem value="dashboard">데이터·차트</TabListItem>
             </TabList>
           </div>
+          <TabPanel value="dashboard">
+            <Dashboard />
+          </TabPanel>
           <TabPanel value="list">
             <section className="section">
               <div className="toolbar">

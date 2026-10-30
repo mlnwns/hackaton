@@ -57,3 +57,8 @@ OneID 라벨: 14/600/20px. 입력: 48px 높이, 좌우 16px, radius 10px, 글자
 최소한 해당 제품에서 쓰는 흐름을 실행한다: 조건 선택→닫기→재열기→적용, 검색→빈 결과→초기화, 행→상세→행동, 필수 누락→오류→수정→제출→결과 반영. 모두 필요한 것은 아니며 사용한 컴포넌트만 확인한다.
 
 폰트 로드 뒤 같은 viewport에서 열림 상태까지 비교한다. 모달 안 메뉴의 portal, 포커스, 스크롤, 모바일 overflow를 특히 확인한다. 기본 상태 스크린샷만으로 완료 판단하지 않는다.
+
+
+## 대시보드 확장
+
+대시보드·분석·차트가 핵심이면 [dashboard-patterns.md](dashboard-patterns.md)의 구조와 [chart-recipes.md](chart-recipes.md)의 차트 선택을 사용한다. 집계/통계는 [data-contracts.md](data-contracts.md)를 확인한다. 공식 Montage UI + 독립 차트 테마이며 원티드 비공개 분석 화면 관찰을 주장하지 않는다.

@@ -4,11 +4,13 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "build": "node build.mjs"
+    "build": "node build.mjs",
+    "test": "node --test src/dashboard/metrics.test.mjs"
   },
   "dependencies": {
     "@montage-ui/core": "4.1.5",
     "@montage-ui/icon": "4.1.5",
+    "echarts": "6.1.0",
     "react": "19.2.0",
     "react-dom": "19.2.0"
   },
