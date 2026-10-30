@@ -12,7 +12,7 @@
 | [`composition-patterns`](skills/composition-patterns/SKILL.md) | 복잡한 React 컴포넌트의 구조를 정리할 필요가 있을 때 |
 | [`pick-ui-library`](skills/pick-ui-library/SKILL.md) | 차트나 UI 컴포넌트처럼 라이브러리 선택이 필요한 경우 |
 | [`emil-design-eng`](skills/emil-design-eng/SKILL.md) | 웹 UI의 상호작용, 접근성과 시각적 완성도를 다듬을 때 |
-| [`wanted-web-design`](skills/wanted-web-design/SKILL.md) | 주제에 맞게 원티드 PC 웹의 화면 위계와 컴포넌트를 적용할 때 |
+| [`wanted-web-design`](skills/wanted-web-design/SKILL.md) | 원티드 PC 실측 타이포그래피·컴포넌트 CSS와 실제 Pretendard 폰트로 웹을 만들 때 |
 | [`wanted-app-design`](skills/wanted-app-design/SKILL.md) | Wanted 앱 같은 차분한 모바일 UI가 필요한 경우 |
 | [`apple-design`](skills/apple-design/SKILL.md) | 터치·드래그·시트 등 제스처 중심 UI가 실제로 필요한 경우 |
 | [`mlnkorean`](skills/mlnkorean/SKILL.md) | 과제 풀이 중 한국어 보고서·화면 안내 문장을 다듬을 때 |
@@ -58,3 +58,5 @@ React Native·Expo를 사용하는 과제라면 `react-native-skills`를 참고�
 ## 출처
 
 `react-best-practices`, `react-native-skills`, `composition-patterns`는 Vercel Engineering의 [공개 스킬 모음](https://github.com/vercel-labs/agent-skills)을 기반으로 하며 각 스킬 메타데이터에 MIT 라이선스가 표시되어 있습니다. `systematic-debugging`과 `verification-before-completion`은 [obra/superpowers](https://github.com/obra/superpowers)에서 가져왔으며 각 폴더의 MIT 라이선스를 보존했습니다. `systematic-debugging`에서 외부 플러그인 스킬을 필수로 호출하던 두 지침을 이 저장소에서 독립적으로 사용할 수 있도록 수정했습니다. 스킬별 안내와 라이선스 표기는 각 폴더를 확인하세요.
+
+`wanted-web-design/assets`에는 독립적으로 작성한 재사용 CSS와 [Pretendard](https://github.com/orioncactus/pretendard) Variable 폰트가 포함됩니다. 폰트의 SIL Open Font License는 같은 폴더의 `OFL.txt`에 보존되어 있습니다. 이 스킬은 원티드 공식 디자인 시스템이나 제휴 제품이 아닙니다.

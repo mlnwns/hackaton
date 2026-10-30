@@ -1,30 +1,33 @@
 ---
 name: wanted-web-design
-description: "Design, build, or review desktop-first websites and web apps in the visual language observed on Wanted's PC website. Use for 원티드 웹 스타일, 원티드 PC 디자인, or a Wanted-style website, dashboard, catalog, detail page, or admin tool in any domain. If only a topic and 원티드 스타일 are given, default to web unless an existing project or request indicates a mobile app. For native mobile app requests use wanted-app-design when available."
+description: "Build or refine desktop-first websites in Wanted's observed PC visual style, with measured typography, real Pretendard loading, and reusable navigation, filter, segment, card, search and dialog CSS. Use for 원티드 웹 스타일, 원티드 PC 디자인, or improving fidelity to Wanted in any domain. Preserve the requested topic; use wanted-app-design for native mobile apps."
 ---
 
-# 원티드 웹 디자인
+# 원티드 PC 웹 디자인
 
-원티드 PC 웹에서 관찰한 화면 위계와 컴포넌트로 요청한 주제의 웹사이트나 웹앱을 만든다. **채용 사이트를 복제하지 않는다.** 검색·목록·상세·업무 화면 중 과제에 맞는 구조를 고르고, 사용자의 주제와 실제 기능으로 내용을 구성한다.
+원티드 웹의 컴포넌트와 글자 체계를 요청한 제품에 적용한다. 흰 배경·파란 버튼·둥근 카드만으로 원티드 스타일이라고 판단하지 않는다. 사용자의 주제, 데이터, 기능, 기존 기술 스택은 유지한다.
 
-## 먼저 확인
+## 시작
 
-- 기존 프로젝트의 기술, 컴포넌트, 데이터, 브랜드와 요청된 동작을 우선한다. 프레임워크나 의존성을 바꾸지 않는다.
-- 작업 전에 [references/desktop-design-system.md](references/desktop-design-system.md)를 읽는다. 관찰 근거, 추천값, 구성요소와 상태가 들어 있다. 값은 공식 디자인 토큰이 아니라 관찰값 또는 구현 출발점이다.
-- 주제만 있고 플랫폼이 없다면 웹을 기본으로 하고 주제에 맞는 핵심 사용자·행동을 합리적으로 정한다. 기존 앱 프로젝트 또는 명시적 모바일 앱 요청이라면 `wanted-app-design`을 사용한다. 둘 다 만들라는 요청이면 각각 적용한다.
-- 로고·제품명·회사명·실제 채용공고·이미지·전용 일러스트와 문구는 가져오지 않는다. 원티드의 정보 위계와 컴포넌트 문법만 새 주제로 재해석한다.
+[실측 명세](references/desktop-design-system.md)를 읽고 화면에 필요한 역할을 선택한다. 수치는 2026-10-31 PC 웹에서 관찰한 값이며 공식 디자인 토큰이라고 부르지 않는다. 레이아웃을 주제에 맞게 조정한 부분은 실측과 구분한다.
 
-## 화면 구성
+- **폰트를 실제로 로드한다.** `font-family` 이름만 지정하면 폴백 폰트로 보일 수 있다. [assets/PretendardVariable.woff2](assets/PretendardVariable.woff2)와 [assets/wanted-web.css](assets/wanted-web.css)를 같은 공개 자산 폴더에 복사하거나 프로젝트의 폰트 로더를 사용한다. [OFL.txt](assets/OFL.txt)도 보존한다. CSS는 독립적으로 작성한 구현이며 공식 원티드 라이브러리가 아니다.
+- 기존 프레임워크에서는 같은 규격을 기존 컴포넌트에 옮긴다. 프로젝트 전역 스타일을 무조건 덮어쓰지 않는다. `w-` 클래스의 필요한 부분만 사용해도 된다.
+- 글자 크기만 맞추지 말고 **family / size / weight / line-height / letter-spacing / color**를 하나의 역할로 맞춘다. 650·750 같은 임의 굵기나 일괄 음수 자간을 UI 전체에 적용하지 않는다.
+- 레퍼런스 버튼의 계산값을 읽을 때 실제 글자를 담은 span도 확인한다. 버튼의 기본 14px/400과 내부 라벨의 13px/500 또는 24px/700은 다르다. 외곽선이 border가 아니라 inset shadow인 경우도 확인한다.
 
-1. 사용자가 먼저 할 일과 필요한 데이터를 정한다. 요구사항과 충돌하지 않게 정보 밀도와 핵심 행동을 선택한다.
-2. PC를 기준으로 상단 내비게이션과 중앙 정렬 콘텐츠를 구성한다. 주제에 맞춰 검색형 목록, 상세+행동 패널, 운영 대시보드, 간결한 폼 중 필요한 조합만 쓴다. 모든 화면에 이미지 카드·배너·채용 필터를 강제하지 않는다.
-3. 콘텐츠의 위계는 진한 제목, 보조 회색, 가는 경계선, 넉넉한 구획 간격으로 만든다. 중요한 행동에는 파란색을 집중하고 장식보다 정보와 실제 작동을 우선한다.
-4. 가능한 입력·선택·검색·저장 동작은 실제 데이터 흐름에 연결하고 로딩·빈 화면·오류·비활성 상태를 다룬다. 샘플을 쓴다면 예시임을 표시하고 실측 성과처럼 꾸미지 않는다.
-5. 데스크톱 구성을 우선 확인하되 좁은 웹 화면에서 넘침 없이 자연스럽게 재배치한다. 모바일 네이티브의 하단 탭이나 반투명 패널을 PC에 강제하지 않는다.
+## 주제에 적용
 
-## 구현과 확인
+1. 요청한 핵심 행동을 유지하고 목록·상세·관리 화면 중 적합한 구조를 고른다. 기존 표를 무조건 이미지 그리드로 바꾸지 않는다. 여러 보기 방식이 필요하면 같은 데이터를 공유한다.
+2. 상단 바, 범위 선택, 필터, 정렬, 콘텐츠의 정렬선과 수직 간격을 맞춘다. 목록 레퍼런스에 없는 큰 영웅 제목, KPI 카드, 소개 문구, 검색 행을 습관적으로 추가하지 않는다. 기능상 추가할 때는 그로 인한 레이아웃 차이를 설명한다.
+3. 제목·메타 정보·버튼 라벨에 실측 역할을 연결한다. 단위가 다른 컴포넌트에 모든 텍스트 14px, 모든 radius 14px 같은 규칙을 쓰지 않는다.
+4. 선택·검색·정렬·저장·초기화·닫기를 실제 데이터와 연결한다. 네이티브 dialog 또는 기존 접근성 라이브러리로 Escape, 포커스 복귀, 키보드 탐색을 지원한다.
+5. 로고·회사명·공고·전용 이미지 대신 주제에 맞는 자산과 문구를 쓴다. 가상 데이터와 개념도는 예시라고 표시한다. 이미지의 품질과 다양성은 폰트·컴포넌트 일치와 별개로 평가한다.
 
-- 색·간격·반지름·글자 계층은 참조 파일의 추천 토큰을 기반으로 만들고 기존 디자인 시스템이 있으면 재사용한다. 디자인 가치보다 기능·요구사항·접근성을 우선한다.
-- 의미 있는 HTML, 레이블, 눈에 보이는 포커스, 키보드 조작, 대비, `prefers-reduced-motion`을 지킨다. 클릭 효과는 수행되는 행동과 연결한다.
-- 해당 환경에서 허용된 미리보기·검증 수단으로 핵심 흐름을 확인한다. 환경이 금지하는 화면 캡처·자동 조작·외부 업로드를 수행하지 않는다. 확인하지 못한 항목은 검증한 것처럼 말하지 않는다.
-- 새 서비스의 예시 이미지가 필요하면 사용자가 제공했거나 사용이 허용된 자산을 쓰고, 없으면 간결한 중립 표면·원본 도형을 사용한다. 장식용 이미지를 위해 외부 네트워크나 유료 도구를 가정하지 않는다.
+## 확인
+
+- PC 비교는 같은 CSS viewport에서 한다. 1440px 또는 실제 요청 폭을 사용하고 브라우저가 좁은 패널 너비로 모바일 레이아웃을 보여주지 않는지 확인한다.
+- 폰트 로드 완료를 확인한 후 렌더링을 비교한다. `document.fonts`의 해당 FontFace가 `loaded`인지 확인한다. `document.fonts.check()`만으로는 폴백 사용을 놓칠 수 있다. 가능하면 개발 도구의 rendered font도 확인한다.
+- 측정한 역할의 font-size/weight/line-height/tracking, 필터 높이, 반지름, 카드 안쪽 여백을 결과와 대조한다. 실제 상호작용의 선택·열림·빈 상태도 확인한다.
+- 시각적 확인 없이 “유사도 높음”이라고 하지 않는다. 전체 유사도 백분율을 만들지 않는다. 맞춘 수치, 달라진 구성, 미확인 범위를 분리해 알려준다.
+- 모바일 웹은 별도로 넘침을 확인하되 PC 기준을 먼저 충족한다. 모든 상태·모든 원티드 페이지를 관찰했다고 주장하지 않는다.
