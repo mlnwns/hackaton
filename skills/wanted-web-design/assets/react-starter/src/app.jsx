@@ -733,7 +733,7 @@ function App() {
           size="large"
           sx={{ width: "560px", maxWidth: "calc(100vw - 32px)" }}
         >
-          <ModalNavigation sx={{ paddingInline: "24px" }}>필터</ModalNavigation>
+          <ModalNavigation>필터</ModalNavigation>
           <ModalContent horizontalPadding="none" sx={{ paddingInline: "24px" }}>
             <FormControl>
               <FormControlLabel>설비 상태</FormControlLabel>
