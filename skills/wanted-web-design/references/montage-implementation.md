@@ -42,7 +42,7 @@ import '@montage-ui/core/global.css';
 | 결과 알림 | useToast | `toast({variant:'positive',content:'저장했어요.'})`. 실제 처리 성공 후 표시 |
 | 진행 | ProgressIndicator | `percent` 0~100. 단계 의미/레이아웃은 제품 요구에 맞게 구성 |
 
-날짜/시간 선택, autocomplete, tooltip, loading 등은 [공식 목록](https://montage.wanted.co.kr/docs/components)에서 확인 후 추가한다. starter에 없다고 임의의 새 스타일로 만들지 않는다. 이 참고문서가 모든 API를 대체하지 않는다.
+날짜/시간 선택, autocomplete, tooltip, loading 등 나머지 공식 항목은 [54종 선택표](montage-components.md)에 포함되어 있다. [조합 기준](montage-composition.md)에서 화면 흐름을 선택하고 [공통 기반·30종 유틸리티](montage-foundations-utilities.md)로 글자·레이아웃·오버레이를 맞춘다. starter에 없다고 임의의 새 스타일로 만들지 않는다. 선택표와 이 참고문서가 설치 버전의 타입·공식 API를 대체하지 않는다.
 
 ## 정적 HTML에 Select만 넣을 때
 

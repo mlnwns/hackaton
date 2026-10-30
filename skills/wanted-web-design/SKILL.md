@@ -1,6 +1,6 @@
 ---
 name: wanted-web-design
-description: "Build or refine desktop-first websites in Wanted's observed PC visual style, with official Montage components, measured typography, and reusable dropdown/filter, dashboard/chart, table, form, detail, profile, navigation and feedback patterns for hackathon products. Use for 원티드 웹 스타일, 원티드 PC 디자인, or improving fidelity to Wanted in any domain. Preserve the requested topic; use wanted-app-design for native mobile apps."
+description: "Build or refine desktop-first websites in Wanted's PC style using official Montage components, typography, and coherent search, filter, form, table, detail and dashboard flows. Use for 원티드 웹 스타일, 원티드 PC 디자인, Montage 컴포넌트 조합, or montage.wanted design-system implementation in any domain. Includes the full web component selection map and composition rules. Preserve the requested topic; use wanted-app-design for native mobile apps."
 ---
 
 # 원티드 PC 웹 디자인
@@ -9,13 +9,21 @@ description: "Build or refine desktop-first websites in Wanted's observed PC vis
 
 ## 시작
 
-[인터랙션·화면 선택표](references/interaction-patterns.md)를 읽고 사용자 주제의 핵심 행동에 맞는 구조를 선택한다. 카드 탐색 외에 표·폼·상세·프로필·진행·데이터 화면을 고려한다. 타이포그래피와 기존 목록 규격은 [실측 명세](references/desktop-design-system.md)를 읽는다. 수치는 2026-10-31 PC 웹에서 관찰한 값이며 공식 디자인 토큰이라고 부르지 않는다. 레이아웃을 주제에 맞게 조정한 부분은 실측과 구분한다.
+[Montage 조합 기준](references/montage-composition.md)에서 사용자 주제의 핵심 행동에 맞는 구조를 선택한다. 카드 탐색 외에 표·폼·상세·프로필·진행·데이터 화면을 고려한다. 구체적인 원티드 서비스 관찰은 [인터랙션·화면 선택표](references/interaction-patterns.md), PC 글자·목록 규격은 [실측 명세](references/desktop-design-system.md)를 필요한 부분만 읽는다. 실측 수치는 2026-10-31 관찰값이며 공식 토큰과 구분한다.
 
 - React라면 [공식 Montage 구현 가이드](references/montage-implementation.md)를 확인하고 필요한 공식 컴포넌트를 사용한다. 실행 가능한 [starter](assets/react-starter/src/app.jsx)는 표·필터, 상세, 폼, 진행 상태와 데이터 대시보드를 담는다. 기존 HTML/프레임워크를 불필요하게 전환하지 않는다.
 - **폰트를 실제로 로드한다.** `font-family` 이름만 지정하면 폴백 폰트로 보일 수 있다. [assets/PretendardVariable.woff2](assets/PretendardVariable.woff2)와 [assets/wanted-web.css](assets/wanted-web.css)를 같은 공개 자산 폴더에 복사하거나 프로젝트의 폰트 로더를 사용한다. [OFL.txt](assets/OFL.txt)도 보존한다. CSS는 독립적으로 작성한 구현이며 공식 원티드 라이브러리가 아니다.
 - 기존 프레임워크에서는 같은 규격을 기존 컴포넌트에 옮긴다. 프로젝트 전역 스타일을 무조건 덮어쓰지 않는다. `w-` 클래스의 필요한 부분만 사용해도 된다.
 - 글자 크기만 맞추지 말고 **family / size / weight / line-height / letter-spacing / color**를 하나의 역할로 맞춘다. 650·750 같은 임의 굵기나 일괄 음수 자간을 UI 전체에 적용하지 않는다.
 - 레퍼런스 버튼의 계산값을 읽을 때 실제 글자를 담은 span도 확인한다. 버튼의 기본 14px/400과 내부 라벨의 13px/500 또는 24px/700은 다르다. 외곽선이 border가 아니라 inset shadow인 경우도 확인한다.
+
+## Montage 컴포넌트 조합
+
+- [54종 전체 선택표](references/montage-components.md)에서 해당 과업의 항목만 찾아 읽는다. Actions 5 · Contents 11 · Feedback 6 · Loading 2 · Navigations 9 · Presentation 6 · Selection/input 15. Design·Web 문서의 선택 기준과 실제 React API를 연결했다. 모든 컴포넌트를 한 화면에 넣거나 모든 참고문서를 한꺼번에 로드하지 않는다.
+- 폰트·색·여백·레이아웃·오버레이 기반이 필요하면 [Foundations + 웹 유틸리티 30종](references/montage-foundations-utilities.md)을 읽는다. 공식 기본 글꼴 Pretendard JP와 동봉 Pretendard Variable을 구분한다. Typography의 역할·weight·행간·자간을 함께 유지한다.
+- 화면은 [조합 레시피](references/montage-composition.md)의 검색/필터, 폼/검증, 표/일괄 행동, 상세/프로필, 대시보드, 단계 진행 중 필요한 흐름을 적용한다. 역할에 따라 Tab/Category/SegmentedControl, Chip/ContentBadge/PushBadge, Toast/Snackbar/Alert를 구분한다.
+- 공식 슬롯과 부모의 자동 size 매핑을 우선한다. `Popup`·`BottomSheet`라는 export를 추측하지 않는다. 둘 다 `Modal` 계열이며 variant는 `ModalContainer`에 준다. `framedStyle`은 함수, Menu의 항목 variant는 `MenuItem`에 준다. 설치 버전의 타입이 API 판단 기준이다.
+- 드롭다운·모달에는 draft/applied, 포커스·Escape·portal·스크롤 규칙을 연결한다. empty/loading/error/success를 구분하고 실제 기능으로 연결한다. 날짜의 min/max, Table, FormControl이 업무 검증·집계·서버 저장까지 자동 제공한다고 가정하지 않는다.
 
 ## 대시보드·차트 요청
 

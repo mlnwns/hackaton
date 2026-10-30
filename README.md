@@ -13,7 +13,7 @@
 | [`composition-patterns`](skills/composition-patterns/SKILL.md) | 복잡한 React 컴포넌트의 구조를 정리할 필요가 있을 때 |
 | [`pick-ui-library`](skills/pick-ui-library/SKILL.md) | 차트나 UI 컴포넌트처럼 라이브러리 선택이 필요한 경우 |
 | [`emil-design-eng`](skills/emil-design-eng/SKILL.md) | 웹 UI의 상호작용, 접근성과 시각적 완성도를 다듬을 때 |
-| [`wanted-web-design`](skills/wanted-web-design/SKILL.md) | 원티드 공식 Montage + PC 실측: 드롭다운·표·폼·상세·대시보드·차트를 주제에 맞게 조합할 때 |
+| [`wanted-web-design`](skills/wanted-web-design/SKILL.md) | 공식 Montage 웹 54종·유틸리티 30종 + PC 실측: 검색·필터·폼·표·상세·대시보드를 일관되게 조합할 때 |
 | [`wanted-app-design`](skills/wanted-app-design/SKILL.md) | Wanted 앱 같은 차분한 모바일 UI가 필요한 경우 |
 | [`apple-design`](skills/apple-design/SKILL.md) | 터치·드래그·시트 등 제스처 중심 UI가 실제로 필요한 경우 |
 | [`mlnkorean`](skills/mlnkorean/SKILL.md) | 과제 풀이 중 한국어 보고서·화면 안내 문장을 다듬을 때 |
@@ -42,6 +42,15 @@ React가 필요할 때는 `skills/react-best-practices/SKILL.md`, 라이브러�
 React Native·Expo를 사용하는 과제라면 `react-native-skills`를 참고하세요. `composition-patterns`는 복잡한 컴포넌트 구조가 실제로 문제가 되는 경우에만 선택하고, 단순한 과제에 구조를 추가하지 마세요. 기존 기술과 설치된 의존성을 우선합니다.
 
 원티드 스타일로 웹을 만들 때는 `wanted-web-design`, 네이티브 모바일 앱을 만들 때는 `wanted-app-design`을 사용하세요. 주제에 맞는 콘텐츠와 기능으로 구성하며 원티드의 로고·이미지·채용 콘텐츠를 복제하지 않습니다. 플랫폼을 지정하지 않은 새 원티드 스타일 요청은 웹을 기본으로 하되 기존 프로젝트의 플랫폼을 따릅니다.
+
+`wanted-web-design`에는 공식 Montage의 [웹 컴포넌트 54종 선택표](skills/wanted-web-design/references/montage-components.md), [화면 조합 레시피](skills/wanted-web-design/references/montage-composition.md), [Foundations·웹 유틸리티 30종](skills/wanted-web-design/references/montage-foundations-utilities.md)이 있습니다. 2026-10-31 기준 Design·Web 문서를 검토해 실제 React API, 슬롯, 선택 기준과 상태 처리를 연결했습니다. 필요한 흐름만 읽어 적용하며, 전 컴포넌트의 모든 상태를 브라우저에서 검증했다는 뜻은 아닙니다.
+
+```text
+hackaton/skills/wanted-web-design/SKILL.md를 읽고,
+[주제와 핵심 기능]을 Montage 스타일 PC 웹으로 만들어줘.
+필요한 컴포넌트와 조합 레시피를 골라 폰트·밀도·슬롯을 맞추고,
+필터 적용/취소, 입력 검증, 로딩·빈 결과·오류까지 실제 동작하게 해줘.
+```
 
 오류가 생기면 `systematic-debugging`, 동작 확인에는 `verification-before-completion`을 사용할 수 있습니다. 과제의 필수 조건, 시간, 허용된 도구와 제출 규칙이 이 스킬보다 우선입니다.
 
