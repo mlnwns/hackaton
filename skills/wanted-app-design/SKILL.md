@@ -1,6 +1,6 @@
 ---
 name: wanted-app-design
-description: "Design, build, or review a mobile app using the observed visual grammar of the Wanted iOS app: restrained white surfaces, clear information hierarchy, compact content cards, translucent floating navigation, consistent icon families, and quiet physical motion. Use when the user asks for 원티드 스타일, a Wanted-like app UI, or specifically wants its floating bottom bar, spacing, cards, icons, or interactions. Do not use for job searching, applications, or general questions about Wanted as a company."
+description: "Design, build, or review a mobile app using the observed visual grammar of the Wanted iOS app: restrained white surfaces, clear information hierarchy, compact content cards, translucent floating navigation, consistent icon families, and quiet physical motion. Use for a native mobile app or explicitly mobile request for 원티드 앱 스타일, a Wanted-like app UI, or its floating bottom bar, spacing, cards, icons, or interactions. For website or desktop requests use wanted-web-design when available. Do not use for job searching, applications, or general questions about Wanted as a company."
 ---
 
 # 원티드 앱 디자인
