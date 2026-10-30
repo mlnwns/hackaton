@@ -1,9 +1,10 @@
 # AI 해커톤 스킬 모음
 
-제한된 시간에 실무 과제를 구현할 때 참고할 수 있는 Codex 스킬 13개입니다. 필요한 스킬만 선택해 사용하세요.
+제한된 시간에 실무 과제를 구현할 때 참고할 수 있는 Codex 스킬 14개입니다. 필요한 스킬만 선택해 사용하세요.
 
 | 스킬 | 사용할 때 |
 | --- | --- |
+| [`hackathon-workflow`](skills/hackathon-workflow/SKILL.md) | 과제 파악부터 실무자 질문, 구현·검증, 제출 준비까지 전체 흐름을 잡을 때 |
 | [`ponytail`](skills/ponytail/SKILL.md) | 기존 코드를 먼저 확인하고, 필요한 범위를 빠뜨리지 않으면서 단순하게 구현할 때 |
 | [`systematic-debugging`](skills/systematic-debugging/SKILL.md) | 오류를 재현하고 원인을 추적할 때 |
 | [`verification-before-completion`](skills/verification-before-completion/SKILL.md) | 완료라고 말하기 전 실제 결과를 검증할 때 |
@@ -35,6 +36,8 @@ hackaton/skills/ponytail/SKILL.md를 읽고,
 ```
 
 React가 필요할 때는 `skills/react-best-practices/SKILL.md`, 라이브러리 선택이 필요할 때는 `skills/pick-ui-library/SKILL.md`를 지정할 수 있습니다. `react-best-practices`의 `rules/`와 `AGENTS.md`는 스킬이 참조하는 자료이므로 함께 유지합니다.
+
+처음 과제를 받았다면 `skills/hackathon-workflow/SKILL.md`로 요구사항과 확인할 질문을 정리하고, 필요한 구현·디자인 스킬을 추가로 선택하세요. 실무자 답변과 제출 조건은 실제 과제 안내로 확인해야 합니다.
 
 React Native·Expo를 사용하는 과제라면 `react-native-skills`를 참고하세요. `composition-patterns`는 복잡한 컴포넌트 구조가 실제로 문제가 되는 경우에만 선택하고, 단순한 과제에 구조를 추가하지 마세요. 기존 기술과 설치된 의존성을 우선합니다.
 
