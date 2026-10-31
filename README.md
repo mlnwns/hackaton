@@ -1,10 +1,11 @@
 # AI 해커톤 스킬 모음
 
-제한된 시간에 실무 과제를 구현할 때 참고할 수 있는 Codex 스킬 14개입니다. 필요한 스킬만 선택해 사용하세요.
+제한된 시간에 실무 과제를 구현할 때 참고할 수 있는 Codex 스킬 15개입니다. 필요한 스킬만 선택해 사용하세요.
 
 | 스킬 | 사용할 때 |
 | --- | --- |
 | [`hackathon-workflow`](skills/hackathon-workflow/SKILL.md) | 과제 파악부터 실무자 질문, 구현·검증, 제출 준비까지 전체 흐름을 잡을 때 |
+| [`hackathon-grilling`](skills/hackathon-grilling/SKILL.md) | 요구사항에서 빠진 정보를 찾고 실무자에게 물어볼 질문의 우선순위를 정할 때 |
 | [`ponytail`](skills/ponytail/SKILL.md) | 기존 코드를 먼저 확인하고, 필요한 범위를 빠뜨리지 않으면서 단순하게 구현할 때 |
 | [`systematic-debugging`](skills/systematic-debugging/SKILL.md) | 오류를 재현하고 원인을 추적할 때 |
 | [`verification-before-completion`](skills/verification-before-completion/SKILL.md) | 완료라고 말하기 전 실제 결과를 검증할 때 |
@@ -39,6 +40,8 @@ React가 필요할 때는 `skills/react-best-practices/SKILL.md`, 라이브러�
 
 처음 과제를 받았다면 `skills/hackathon-workflow/SKILL.md`로 요구사항과 확인할 질문을 정리하고, 필요한 구현·디자인 스킬을 추가로 선택하세요. 실무자 답변과 제출 조건은 실제 과제 안내로 확인해야 합니다.
 
+업무 내용이 모호하면 `skills/hackathon-grilling/SKILL.md`로 문서에 이미 있는 답과 확인이 필요한 질문을 구분하세요. 제안된 질문은 사용자가 실무자에게 전달하고, 답변을 Codex에 알려 주어야 반영할 수 있습니다.
+
 React Native·Expo를 사용하는 과제라면 `react-native-skills`를 참고하세요. `composition-patterns`는 복잡한 컴포넌트 구조가 실제로 문제가 되는 경우에만 선택하고, 단순한 과제에 구조를 추가하지 마세요. 기존 기술과 설치된 의존성을 우선합니다.
 
 원티드 스타일로 웹을 만들 때는 `wanted-web-design`, 네이티브 모바일 앱을 만들 때는 `wanted-app-design`을 사용하세요. 주제에 맞는 콘텐츠와 기능으로 구성하며 원티드의 로고·이미지·채용 콘텐츠를 복제하지 않습니다. 플랫폼을 지정하지 않은 새 원티드 스타일 요청은 웹을 기본으로 하되 기존 프로젝트의 플랫폼을 따릅니다.
@@ -68,6 +71,8 @@ hackaton/skills/wanted-web-design/SKILL.md를 읽고,
 - 시험 환경에서 저장소 다운로드와 스킬 적용이 가능한지는 사전 체험에서 확인하세요.
 
 ## 출처
+
+`hackathon-grilling`은 [mattpocock/skills의 grilling](https://github.com/mattpocock/skills/tree/main/skills/productivity/grilling)을 해커톤에 맞게 수정한 스킬이며, 원본의 MIT 라이선스를 해당 폴더에 보존했습니다.
 
 `react-best-practices`, `react-native-skills`, `composition-patterns`는 Vercel Engineering의 [공개 스킬 모음](https://github.com/vercel-labs/agent-skills)을 기반으로 하며 각 스킬 메타데이터에 MIT 라이선스가 표시되어 있습니다. `systematic-debugging`과 `verification-before-completion`은 [obra/superpowers](https://github.com/obra/superpowers)에서 가져왔으며 각 폴더의 MIT 라이선스를 보존했습니다. `systematic-debugging`에서 외부 플러그인 스킬을 필수로 호출하던 두 지침을 이 저장소에서 독립적으로 사용할 수 있도록 수정했습니다. 스킬별 안내와 라이선스 표기는 각 폴더를 확인하세요.
 
