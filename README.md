@@ -1,11 +1,12 @@
 # AI 해커톤 스킬 모음
 
-제한된 시간에 실무 과제를 구현할 때 참고할 수 있는 Codex 스킬 15개입니다. 필요한 스킬만 선택해 사용하세요.
+제한된 시간에 실무 과제를 구현할 때 참고할 수 있는 Codex 스킬 16개입니다. 필요한 스킬만 선택해 사용하세요.
 
 **시험에서 처음부터 따라 할 순서와 복사해서 쓸 문장:** [시험 진행 가이드](시험-진행-가이드.md)
 
 | 스킬 | 사용할 때 |
 | --- | --- |
+| [`hackathon-copilot`](skills/hackathon-copilot/SKILL.md) | 과제를 이해하고 핵심 설계를 함께 결정하며 구현·설명 연습까지 진행할 때 |
 | [`hackathon-workflow`](skills/hackathon-workflow/SKILL.md) | 과제 파악부터 실무자 질문, 구현·검증, 제출 준비까지 전체 흐름을 잡을 때 |
 | [`hackathon-grilling`](skills/hackathon-grilling/SKILL.md) | 요구사항에서 빠진 정보를 찾고 실무자에게 물어볼 질문의 우선순위를 정할 때 |
 | [`ponytail`](skills/ponytail/SKILL.md) | 기존 코드를 먼저 확인하고, 필요한 범위를 빠뜨리지 않으면서 단순하게 구현할 때 |
@@ -40,7 +41,7 @@ hackaton/skills/ponytail/SKILL.md를 읽고,
 
 React가 필요할 때는 `skills/react-best-practices/SKILL.md`, 라이브러리 선택이 필요할 때는 `skills/pick-ui-library/SKILL.md`를 지정할 수 있습니다. `react-best-practices`의 `rules/`와 `AGENTS.md`는 스킬이 참조하는 자료이므로 함께 유지합니다.
 
-처음 과제를 받았다면 `skills/hackathon-workflow/SKILL.md`로 요구사항과 확인할 질문을 정리하고, 필요한 구현·디자인 스킬을 추가로 선택하세요. 실무자 답변과 제출 조건은 실제 과제 안내로 확인해야 합니다.
+처음 과제를 받았다면 `skills/hackathon-copilot/SKILL.md`로 요구사항과 확인할 질문을 정리하고 핵심 설계를 함께 결정할 수 있습니다. 간단한 진행 지침이 필요할 때는 `hackathon-workflow`를 선택하세요. 실무자 답변과 제출 조건은 실제 과제 안내로 확인해야 합니다.
 
 업무 내용이 모호하면 `skills/hackathon-grilling/SKILL.md`로 문서에 이미 있는 답과 확인이 필요한 질문을 구분하세요. 제안된 질문은 사용자가 실무자에게 전달하고, 답변을 Codex에 알려 주어야 반영할 수 있습니다.
 
