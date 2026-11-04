@@ -43,6 +43,7 @@ description: Build or refine desktop web interfaces for SK hynix-themed tasks us
 - React에서는 [Montage 구현 가이드](references/montage-implementation.md), [컴포넌트 선택표](references/montage-components.md), [조합 기준](references/montage-composition.md)을 필요한 만큼 읽고 공식 `@montage-ui/core` 컴포넌트와 설치된 버전의 API를 사용한다. 기존 프로젝트의 기술 스택과 컴포넌트가 있으면 먼저 재사용한다.
 - 이 스킬의 [브랜드 토큰](assets/sk-hynix-brand.css)은 동봉 예제의 Montage 4.1.5에서 확인한 light 테마의 브랜드 의미 토큰을 덮어쓴다. Montage `global.css` 뒤에 불러오고 실제 사용한 버튼·탭·필터·포커스 상태를 검사한다. 프로젝트 버전이나 테마 구현이 다르면 해당 버전의 토큰을 확인한다. dark 테마는 이 파일로 재정의하지 않으므로 별도 검증 없이 브랜드 적용을 주장하지 않는다.
 - 기존 테마 전체나 오류·성공 상태 토큰을 무조건 변경하지 않는다. Montage가 공식 제공하는 차트는 확인되지 않았고 동봉 예제의 차트 테마는 별도 구현이다. 업무에 필요한 지표와 상태를 먼저 정한다.
+- 아이콘은 별도 지정이 없으면 [Tabler Icons](https://tabler.io/icons)를 기본으로 사용한다. React에서는 `@tabler/icons-react`에서 필요한 아이콘을 개별 import하고 크기·선 두께·색상을 화면 전체에서 일관되게 맞춘다. 기존 제품의 아이콘 체계나 과제 지시가 있으면 우선하며, Montage 컴포넌트의 동작과 접근성을 유지한다. 장식 아이콘은 스크린리더에서 숨기고 아이콘만 있는 버튼에는 접근 가능한 이름을 제공한다. MIT 라이선스 고지를 보존한다.
 - 사용자가 다른 글꼴을 명시하지 않았다면 Pretendard를 기본 서체로 사용한다. 동봉한 [Pretendard Variable](assets/react-starter/PretendardVariable.woff2)을 `@font-face` 또는 프로젝트의 폰트 로더로 실제 로드하고 [OFL](assets/OFL.txt)을 보존한다. 이름만 CSS에 적거나 폴백을 Pretendard로 간주하지 않는다. 일반·굵은 글씨와 버튼·입력 등 컴포넌트에서 해당 폰트 파일의 로드 상태와 실제 렌더링 글꼴을 확인한다. 로드 불가 시 폴백을 명시하고 미확인 상태를 보고한다.
 
 ## 실행 가능한 예제와 검증
