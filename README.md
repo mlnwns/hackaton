@@ -1,6 +1,6 @@
 # AI 해커톤 스킬 모음
 
-제한된 시간에 실무 과제를 구현할 때 참고할 수 있는 Codex 스킬 16개입니다. 필요한 스킬만 선택해 사용하세요.
+제한된 시간에 실무 과제를 구현할 때 참고할 수 있는 Codex 스킬 17개입니다. 필요한 스킬만 선택해 사용하세요.
 
 **시험에서 처음부터 따라 할 순서와 복사해서 쓸 문장:** [시험 진행 가이드](시험-진행-가이드.md)
 
@@ -18,6 +18,7 @@
 | [`pick-ui-library`](skills/pick-ui-library/SKILL.md) | 차트나 UI 컴포넌트처럼 라이브러리 선택이 필요한 경우 |
 | [`emil-design-eng`](skills/emil-design-eng/SKILL.md) | 웹 UI의 상호작용, 접근성과 시각적 완성도를 다듬을 때 |
 | [`wanted-web-design`](skills/wanted-web-design/SKILL.md) | 공식 Montage 웹 54종·유틸리티 30종 + PC 실측: 검색·필터·폼·표·상세·대시보드를 일관되게 조합할 때 |
+| [`sk-hynix-web-design`](skills/sk-hynix-web-design/SKILL.md) | Montage 컴포넌트를 유지하면서 SK하이닉스 CI 색상을 적용한 업무용 웹 화면을 만들 때 |
 | [`wanted-app-design`](skills/wanted-app-design/SKILL.md) | Wanted 앱 같은 차분한 모바일 UI가 필요한 경우 |
 | [`apple-design`](skills/apple-design/SKILL.md) | 터치·드래그·시트 등 제스처 중심 UI가 실제로 필요한 경우 |
 | [`mlnkorean`](skills/mlnkorean/SKILL.md) | 과제 풀이 중 한국어 보고서·화면 안내 문장을 다듬을 때 |
@@ -56,6 +57,8 @@ React가 필요할 때는 `skills/react-best-practices/SKILL.md`, 라이브러�
 React Native·Expo를 사용하는 과제라면 `react-native-skills`를 참고하세요. `composition-patterns`는 복잡한 컴포넌트 구조가 실제로 문제가 되는 경우에만 선택하고, 단순한 과제에 구조를 추가하지 마세요. 기존 기술과 설치된 의존성을 우선합니다.
 
 원티드 스타일로 웹을 만들 때는 `wanted-web-design`, 네이티브 모바일 앱을 만들 때는 `wanted-app-design`을 사용하세요. 주제에 맞는 콘텐츠와 기능으로 구성하며 원티드의 로고·이미지·채용 콘텐츠를 복제하지 않습니다. 플랫폼을 지정하지 않은 새 원티드 스타일 요청은 웹을 기본으로 하되 기존 프로젝트의 플랫폼을 따릅니다.
+
+SK하이닉스 과제에 Montage 컴포넌트를 적용하려면 `sk-hynix-web-design`을 사용하세요. 별도로 설치할 수 있도록 필요한 컴포넌트 문서와 예제를 함께 포함합니다. 로고는 사용·재배포가 허용된 공식 원본이 제공될 때 적용하며, 스킬에는 포함하지 않습니다.
 
 `wanted-web-design`에는 공식 Montage의 [웹 컴포넌트 54종 선택표](skills/wanted-web-design/references/montage-components.md), [화면 조합 레시피](skills/wanted-web-design/references/montage-composition.md), [Foundations·웹 유틸리티 30종](skills/wanted-web-design/references/montage-foundations-utilities.md)이 있습니다. 2026-10-31 기준 Design·Web 문서를 검토해 실제 React API, 슬롯, 선택 기준과 상태 처리를 연결했습니다. 필요한 흐름만 읽어 적용하며, 전 컴포넌트의 모든 상태를 브라우저에서 검증했다는 뜻은 아닙니다.
 

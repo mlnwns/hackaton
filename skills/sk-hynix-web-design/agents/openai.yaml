@@ -1,0 +1,4 @@
+interface:
+  display_name: "SK하이닉스 웹 디자인"
+  short_description: "Montage 컴포넌트에 SK하이닉스 CI 색상을 적용합니다"
+  default_prompt: "Use $sk-hynix-web-design to build a desktop web interface for this SK hynix task."

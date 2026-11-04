@@ -1,0 +1,21 @@
+/* SK CI colors; Montage 4.1.5 light semantic brand tokens. */
+html:not([data-theme='dark']) {
+  --sk-red: #ea002c;
+  --sk-orange: #f47725;
+  --semantic-foreground-brand-primary: #ea002c;
+  --semantic-foreground-brand-primary-rgb: 234, 0, 44;
+  --semantic-surface-brand-primary: #ea002c;
+  --semantic-surface-brand-primary-rgb: 234, 0, 44;
+  --semantic-surface-brand-strong: #c70025;
+  --semantic-surface-brand-strong-rgb: 199, 0, 37;
+  --semantic-surface-brand-heavy: #b50022;
+  --semantic-surface-brand-heavy-rgb: 181, 0, 34;
+  --semantic-surface-brand-subtle: #ea002c0d;
+  --semantic-surface-brand-subtle-rgb: 234, 0, 44;
+  --semantic-line-brand-primary: #ea002c47;
+  --semantic-line-brand-primary-rgb: 234, 0, 44;
+  --semantic-line-brand-strong: #ea002c6e;
+  --semantic-line-brand-strong-rgb: 234, 0, 44;
+  --semantic-line-brand-focus: #ea002c1f;
+  --semantic-line-brand-focus-rgb: 234, 0, 44;
+}
