@@ -25,6 +25,14 @@
 
 ## 사용
 
+과제 작업 중이라면 Codex에 아래 한 문장으로 요청할 수 있습니다.
+
+```text
+https://github.com/mlnwns/hackaton 의 hackathon-copilot을 설치하고 과제 분석을 시작해줘.
+```
+
+설치 요청을 처리하는 Codex는 과제 루트와 기존 스킬을 먼저 확인하고, 이 저장소의 `skills/hackathon-copilot` 폴더 전체를 과제 루트의 `.agents/skills/hackathon-copilot`에 복사한다. 기존 파일은 임의로 덮어쓰지 않는다. 설치 후 `SKILL.md`를 직접 읽고 과제의 README와 제공 파일을 확인해 핵심 설명과 DM 질문을 준비한다. 사용자가 설치만 요청했거나 과제 파일이 없으면 설치 결과만 보고한다. 자동 인식은 별도로 `/skills`에서 확인하며, 발견되지 않아도 파일을 직접 읽어 진행한다.
+
 공개 저장소 다운로드가 허용된 환경에서 다음 명령을 실행합니다.
 
 ```bash
