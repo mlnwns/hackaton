@@ -153,7 +153,7 @@ function App() {
       <header className="top">
         <div className="shell top-inner">
           <a className="brand" href="#">
-            워크스테이션<span className="beta">DEMO</span>
+            워크스테이션
           </a>
           <nav aria-label="주 메뉴">
             <button onClick={() => setTab("list")}>설비 관리</button>
@@ -172,7 +172,7 @@ function App() {
       <main className="shell">
         <div className="page-heading">
           <div>
-            <p className="eyebrow">SK HYNIX · WORKSPACE DEMO</p>
+
             <h1>설비 운영 워크스페이스</h1>
             <p className="muted">
               표에서 찾고, 상세를 확인하고, 점검을 요청하세요.
@@ -727,7 +727,7 @@ function App() {
           </TabPanel>
         </Tab>
         <footer className="foot">
-          공개 Montage 컴포넌트와 SK CI 색상을 사용한 독립 데모입니다.
+          예시 데이터로 구성된 연습 화면입니다.
         </footer>
       </main>
       <Modal open={filterOpen} onOpenChange={setFilterOpen}>

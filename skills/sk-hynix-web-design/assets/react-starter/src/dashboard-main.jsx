@@ -11,7 +11,7 @@ function App() {
       <header className="top">
         <div className="shell dash-standalone top-inner">
           <a className="brand" href="dashboard.html">
-            워크스테이션<span className="beta">DATA</span>
+            워크스테이션
           </a>
           <nav className="dash-standalone-nav" aria-label="데이터 주 메뉴">
             <a href="dashboard.html" aria-current="page">
