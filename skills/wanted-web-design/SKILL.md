@@ -1,6 +1,6 @@
 ---
 name: wanted-web-design
-description: "Build or refine desktop-first websites in Wanted's PC style using official Montage components, typography, and coherent search, filter, form, table, detail and dashboard flows. Use for 원티드 웹 스타일, 원티드 PC 디자인, Montage 컴포넌트 조합, or montage.wanted design-system implementation in any domain. Includes the full web component selection map and composition rules. Preserve the requested topic; use wanted-app-design for native mobile apps."
+description: "Build or refine desktop-first websites in Wanted's PC style using official Montage components, typography, and coherent search, filter, form, table, detail and dashboard flows. Use for 원티드 웹 스타일, 원티드 PC 디자인, Montage 컴포넌트 조합, or montage.wanted design-system implementation in any domain. Includes the full web component selection map and composition rules. Preserve the requested topic."
 ---
 
 # 원티드 PC 웹 디자인
